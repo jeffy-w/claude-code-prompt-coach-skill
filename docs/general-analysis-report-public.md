@@ -601,7 +601,7 @@ For projects averaging <10 min/session:
 | 2 | 8 | `/Users/<username>/code/<personal-project-1>/README.md` |
 | 3 | 4 | `.../blog-posts/posts/claude-code-prompt-coach-skill/post.md` |
 | 4 | 3 | `/Users/<username>/code/<test-project>/README.md` |
-| 5 | 3 | `/Users/<username>/code/<test-project>/ccusage.md` |
+| 5 | 3 | `/Users/<username>/code/<test-project>/notes.md` |
 | 6 | 3 | `.../obsidian/automation/scripts/research_executor.js` |
 | 7 | 3 | `/Users/<username>/code/obsidian/package.json` |
 | 8 | 2 | `.../claude-code-prompt-coach-skill/Skill.md` |
@@ -876,7 +876,7 @@ Create error runbook:
 
 **Core Projects (deserve deep focus):**
 1. <username> (personal)
-2. <client-project-1>-ai-studio
+2. <client-project-1>
 3. youtube-transcript-mcp
 4. claude-code-prompt-coach-skill
 

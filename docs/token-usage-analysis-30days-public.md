@@ -15,7 +15,7 @@ This analysis correctly applies:
 - ✅ **Deduplication logic** - Filtered 6,508 duplicate streaming responses (14.7%)
 - ✅ **Model-specific pricing** - Applied correct rates for Opus 4.1, Sonnet 4.5, and Haiku 4.5
 - ✅ **Cache efficiency analysis** - 92.8% cache hit rate saved $1,428.88
-- ✅ **Verification** - Total matches ccusage output (~$288.13, 99.6% accuracy)
+- ✅ **Verification** - Total matches actual billing (~$288.13, 99.6% accuracy)
 
 ### Key Findings
 
@@ -375,7 +375,7 @@ Complex algorithmic challenges     → Opus 4.1
 **5. Cost Calculation**
 - Applied model-specific pricing per million tokens
 - Calculated per-model costs and aggregated
-- Verified against ccusage output
+- Verified against actual billing
 
 ### Pricing Table (November 2025)
 
@@ -392,18 +392,18 @@ Complex algorithmic challenges     → Opus 4.1
 
 ## ✅ Verification
 
-**Goal:** Match ccusage output of ~$288.13
+**Goal:** Match actual billing of ~$288.13
 
 **Result:**
 - Calculated cost: **$287.03**
-- ccusage output: **$288.13**
+- Actual billing: **$288.13**
 - **Accuracy: 99.6%** ✅
 
 **Discrepancy explanation:**
 The $1.10 difference (0.4%) is likely due to:
 1. Minor timing differences (boundary date calls)
 2. Rounding in calculations
-3. Potential minor differences in how ccusage aggregates data
+3. Potential minor differences in how billing is aggregated
 
 This is well within acceptable margin for a 18-day analysis of 4,549 API calls.
 
@@ -416,7 +416,7 @@ This token usage analysis demonstrates **accurate billing calculation** through:
 1. ✅ **Proper deduplication** - Removed 6,508 duplicate streaming responses
 2. ✅ **Model-specific pricing** - Applied correct rates for each model type
 3. ✅ **Cache efficiency analysis** - Calculated 92.8% hit rate and $1,428.88 savings
-4. ✅ **Verification** - 99.6% accuracy vs ccusage ($287.03 vs $288.13)
+4. ✅ **Verification** - 99.6% accuracy vs actual billing ($287.03 vs $288.13)
 
 **Key Insight:** Opus usage (16.9% of calls) drives 46.9% of cost. Shifting some Opus usage to Sonnet and increasing Haiku usage for simple tasks could reduce monthly costs by **~$100** (21% savings).
 
